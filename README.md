@@ -15,9 +15,9 @@ The main goal is to create an interactive 3D Tic Tac Toe game with a robust AI o
 - **Draw Condition:** The game is a draw if neither player achieves the winning condition.
 
 ## System Flow Diagram
-![System Flow Diagram]()
+![System Flow Diagram](https://github.com/anveshchidura/3D-TicTacToe/blob/main/system%20flow%20diagram.png)
 ## Data Flow Diagram
-![Data Flow Diagram]()
+![Data Flow Diagram](https://github.com/anveshchidura/3D-TicTacToe/blob/main/data%20flow%20diagram.png)
 
 ## Input Design
 The game is developed using JavaScript. Players interact through a board interface, with input controls designed to be intuitive and accessible.

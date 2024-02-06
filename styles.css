@@ -1,0 +1,253 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.boards {
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.reset-button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: #002;
+  color: #44f;
+  text-align: center;
+  font-size: 30px;
+}
+section {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+}
+#options {
+  left: 0vw;
+}
+#game {
+  left: 40vw;
+}
+.new-btn {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid;
+  border-radius: 5px;
+  padding: 12px 18px;
+  cursor: pointer;
+  width: fit-content;
+}
+.new-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.current {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 5px solid black;
+  width: 23vh;
+  height: 23vh;
+  background-color: #004;
+}
+.playfield {
+  position: relative;
+  -webkit-perspective: 23vh;
+  -moz-perspective: 23vh;
+  perspective: 23vh;
+}
+.floor {
+  margin: auto;
+  position: relative;
+  width: 23vh;
+  height: 23vh;
+  -webkit-transform: rotateX(45deg);
+  -moz-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+}
+.x0 {
+  left: 0%;
+}
+.x1 {
+  left: 25%;
+}
+.x2 {
+  left: 50%;
+}
+.x3 {
+  left: 75%;
+}
+.y0 {
+  top: 0%;
+}
+.y1 {
+  top: 25%;
+}
+.y2 {
+  top: 50%;
+}
+.y3 {
+  top: 75%;
+}
+.segment {
+  border: 2px solid black;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background-color: #004;
+}
+.o:before {
+  content: "";
+  left: 17%;
+  top: 17%;
+  width: 66%;
+  height: 66%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+}
+.o:after {
+  content: "";
+  left: 22%;
+  top: 22%;
+  width: 56%;
+  height: 56%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #004;
+}
+.x:before {
+  content: "";
+  left: 47.5%;
+  top: 8%;
+  width: 5%;
+  height: 84%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: red;
+}
+.x:after {
+  content: "";
+  left: 47.5%;
+  top: 8%;
+  width: 5%;
+  height: 84%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  background-color: red;
+}
+.segment:hover,
+.o:hover:after {
+  background-color: #005;
+}
+.current.o:hover:after {
+  background-color: #004;
+}
+.winner-o,
+.winner-o:hover,
+.winner-o.o:after,
+.winner-o.o:hover:after {
+  background-color: #040;
+}
+.winner-x,
+.winner-x:hover {
+  background-color: #400;
+}
+
+.title {
+  font-size: 50px;
+}
+.diff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#difficulty {
+  width: 100px;
+  padding: 6px;
+  font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #002;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
